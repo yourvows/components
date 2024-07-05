@@ -1,0 +1,35 @@
+{
+  "name": "components",
+  "main": "./vitepress/dist/index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@ivanv/vue-collapse-transition": "^1.0.2",
+    "@vitepress-demo-preview/component": "^2.3.2",
+    "@vitepress-demo-preview/plugin": "^1.2.2",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "autoprefixer": "^10.4.17",
+    "maska": "^2.1.11",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "vitepress": "^1.0.0-rc.39"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
+  "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/gitlab": "^13.0.2",
+    "@semantic-release/npm": "^11.0.2",
+    "semantic-release": "^23.0.1"
+  },
+  "semantic-release": "semantic-release"
+
+}

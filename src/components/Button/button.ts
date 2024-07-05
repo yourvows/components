@@ -1,0 +1,17 @@
+export type TButtonVariants =
+    | 'primary'
+    | 'secondary'
+    | 'outline'
+    | 'outline-dark'
+    | 'outline-primary'
+    | 'outline-fill'
+    | 'gold'
+    | 'secondary-danger'
+    | 'danger'
+    | 'disabled'
+    | 'red'
+    | 'secondary-gray'
+    | 'secondary-blue'
+    | 'secondary-green'
+
+export type TButtonSizes = 'md'
