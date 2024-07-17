@@ -1,11 +1,10 @@
 <template>
   <div
       :id="id"
-      class="bg-gray-300 border border-transparent transition-all duration-300 focus-within:border-blue focus-within:bg-transparent flex items-center rounded-lg"
+      class="bg-gray-300 border border-transparent transition-all duration-300 focus-within:border-blue flex items-center rounded-lg"
       :class="{
       '!border-red !bg-red/5': error,
       '!bg-transparent border-white-100': isTransparent,
-
     }"
   >
     <slot name="prefix" />
@@ -30,7 +29,7 @@
       }]"
         @keyup.enter="handleEnter"
         @input="handleInput"
-        @blur="$emit('blur')"
+        @blur="handleBlur"
         @focusout="$emit('focusout')"
         @focus="handleFocus"
     />
@@ -72,6 +71,9 @@ const emit = defineEmits<{
 
 const handleInput = (e: { target: HTMLInputElement }) => {
   emit('update:modelValue', e.target.value)
+}
+const handleBlur = () => {
+  emit('blur')
 }
 const handleEnter = () => {
   emit('enter')

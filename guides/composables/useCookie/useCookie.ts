@@ -4,7 +4,7 @@ export default function useCookie(cookieName: string, domain?: string) {
     // Function to get the value of the cookie
     const getCookie = (): string | null => {
         const name = `${cookieName}=`;
-        const decodedCookie = decodeURIComponent(document.cookie);
+        const decodedCookie = decodeURIComponent(document?.cookie);
         const cookieArray = decodedCookie.split(";");
 
         for (let i = 0; i < cookieArray.length; i++) {

@@ -61,7 +61,9 @@ updateCookie('newValue', 7); // Sets/Updates the cookie to 'newValue', expiring 
 
 ## Example
 
+<ClientOnly>
 <UserCookieExample />
+</ClientOnly>
 
 <script setup>
 import UserCookieExample from './useCookieExample.vue'

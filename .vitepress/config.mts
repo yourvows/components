@@ -5,6 +5,9 @@ import { componentPreview, containerPreview } from '@vitepress-demo-preview/plug
 export default defineConfig({
   title: "Components",
   description: "Composables, Directives, Components and util functions",
+  head:[
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -18,7 +21,6 @@ export default defineConfig({
         text: 'Components',
         items: [
           {text: 'Button', link: '/guides/components/Button/button'},
-          {text: 'Story', link: '/guides/components/Story/story'},
           {
             text:'Form', link:'/guides/components/Form/form', items: [
               {text: 'Input', link: '/guides/components/Form/input'},
@@ -42,8 +44,8 @@ export default defineConfig({
       {
         text: 'Utils',
         items: [
-          {text: 'Functions', link: '/guides/utils/functions'},
-          {text: 'Mixins', link: '/guides/utils/mixins'},
+          {text: 'Number Rounder', link: '/guides/utils/round-number'},
+          {text: 'Phone Validator', link: '/guides/utils/validate-phone'},
         ]
       },
       {

@@ -1,3 +1,9 @@
+## Validate Phone Number
+
+Function validates country code
+
+::: details Function
+```javascript
 const validCountryCodes = [
     '90',
     '91',
@@ -14,12 +20,10 @@ const validCountryCodes = [
     '20',
 ]
 
-/**
- * Check if phone is valid
- * @param phoneNumber - phone number
- */
-
-export const isValidPhone = (phoneNumber: string) => {
+const isValidPhone = (phoneNumber: string) => {
     const phone = phoneNumber.replace(/[\s)(-]/g, '')
     return phone.length === 9 && validCountryCodes.includes(phone.substring(0, 2))
 }
+```
+:::
+

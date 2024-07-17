@@ -1,8 +1,6 @@
 # Image Lazy Load Directive
 The `lazyLoad` directive is used for lazy loading images in Vue.js applications using the Composition API. It utilizes the Intersection Observer API to load images when they become visible in the viewport.
 
-## Source Code
-The source code for the `lazyLoad` directive can be found [here](https://gitlab.uicgroup.tech/imkon/commeta-frontend/docs/-/blob/master/src/directives/LazyLoad.ts).
 
 ## Registration
 
@@ -39,7 +37,6 @@ export default defineNuxtPlugin((nuxtApp) => {
 ```
 
 ## Usage
-It is recommended that you use this [component](https://gitlab.uicgroup.tech/imkon/commeta-frontend/docs/-/blob/master/src/components/LazyImage/LazyImage.vue) to use this directive.
 
 This Vue component provides a directive for lazy loading images using the Composition API. It consists of the following parts:
 

@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Components"
+  name: "Cheat Sheet"
   text: "for developers"
   actions:
     - theme: brand
@@ -13,10 +13,14 @@ hero:
 #      link: /api-examples
 
 features:
-  - title: Code Style
-    icon: "🎨"
-    details: Vue code style
-    link: /guides/code-style.html
+#  - title: Code Style 
+#    icon: "🎨"
+#    details: Vue code style
+#    link: /guides/code-style.html
+  - title: Checklist
+    icon: "📝"
+    details: Checklist before commit
+    link: /guides/checklist.html
   - title: Components
     icon: "📦"
     details: UI components

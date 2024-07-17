@@ -1,6 +1,6 @@
 # Utility functions
 
-## Format number
+## Number Rounder
 Number formatter is used to format big numbers like 1K or 1M
 
 <CInput v-model="formatNumber" type="number" placeholder="Number" />
@@ -39,7 +39,6 @@ export function nFormatter(num: number, digits: number) {
 :::
 <script setup>
 import CInput from '../../src/components/Form/Input/CInput.vue';
-import {vMaska} from 'maska';
 import {ref} from "vue"; 
 import {nFormatter,} from "../../src/utils/formatters"; 
 

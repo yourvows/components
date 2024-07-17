@@ -26,8 +26,17 @@ You can also use the slot.
 Use the `variant` props to change the visual style of the Button.
 
   >In every project we have different variants. You can see other versions of the Button component in the `TButtonVariants` types in your project.
+<div class="flex gap-4 flex-wrap">
+    <CButton variant="primary" text="primary" @click="chooseRandomVariant" />
+    <CButton variant="secondary" text="secondary" @click="chooseRandomVariant" />
+    <CButton variant="danger" text="danger" @click="chooseRandomVariant" />
+    <CButton variant="red" text="red" @click="chooseRandomVariant" />
+    <CButton variant="gold" text="gold" @click="chooseRandomVariant" />
+    <CButton variant="outline" text="outline" @click="chooseRandomVariant" />
+    <CButton variant="outline-primary" text="outline-primary" @click="chooseRandomVariant" />
+    <CButton variant="outline-fill" text="outline-fill" @click="chooseRandomVariant" />
+</div>
 
-<CButton :variant="variant" :text="variant" @click="chooseRandomVariant" />
 
 ```vue
 <CButton text="secondary" variant="secondary" />
