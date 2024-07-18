@@ -28,7 +28,7 @@ export default defineConfig({
               {text: 'Nested Checkbox', link: '/guides/components/Form/nested-checkbox'},
               {text: 'Radio', link: '/guides/components/Form/radio'},
               {text: 'Step Range', link: '/guides/components/Form/step-range'},
-
+              {text: 'OTP Input', link: '/guides/components/Form/otp'},
             ]
           },
           {text: 'Collapse', link: '/guides/components/Collapse/collapse'},

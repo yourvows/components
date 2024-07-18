@@ -88,17 +88,21 @@ The Input component offers slots for adding custom content before (prefix) and a
 | readonly      | boolean            | false          | If true, makes the input field read-only.          |
 | id            | string             | undefined      | The ID of the component's root element.            |
 
+
+
+## Emits
+| Name              | Description                                                                         |
+|-------------------|-------------------------------------------------------------------------------------|
+| update:modelValue | Emitted when the value of the model changes.                                        |
+| blur              | Emitted when the input field loses focus.                                           |
+| focusout          | Emitted when the input field loses focus, including when moving to a child element. |
+| focus             | Emitted when the input field gains focus.                                           |
+| enter             | Emitted when the Enter key is pressed.                                              |
+
+
 ## Slots
 - `prefix`: Used to add content before the input field.
 - `suffix`: Used to add content after the input field.
-
-## Emits
-- `update:modelValue`: Emitted when the input value changes.
-- `blur`: Emitted when the input field loses focus.
-- `focusout`: Emitted when the input field loses focus, including when moving to a child element.
-- `focus`: Emitted when the input field gains focus.
-- `enter`: Emitted when the Enter key is pressed.
-
 
 
 <script setup>
